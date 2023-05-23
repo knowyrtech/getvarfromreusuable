@@ -6,7 +6,7 @@ on:
 
 jobs:
   mainjob1:
-    runs-on: moh_win
+    runs-on: "moh_win"
     
     steps:
     
