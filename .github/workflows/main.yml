@@ -9,10 +9,7 @@ jobs:
     runs-on: "moh_win"
     
     steps:
-    
-      - run: |
-          whoami
-          
+        
       - name: Checkout  repository
         uses: actions/checkout@v3
         
