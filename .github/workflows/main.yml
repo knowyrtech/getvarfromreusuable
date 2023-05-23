@@ -23,6 +23,6 @@ jobs:
     runs-on: "moh_win"
     
     steps:
-      - name: Back  to main workflow
+      - name: Back to main workflow
         run: |
           echo "App name in mainjob2: ${{ needs.reusable_workflow_job.outputs.app_name }}"  
