@@ -13,7 +13,7 @@ jobs:
       - run: |
           whoami
           
-      - name: Checkout  repository
+      - name: Checkout repository
         uses: actions/checkout@v3
         
   reusuable_workflow_job:
