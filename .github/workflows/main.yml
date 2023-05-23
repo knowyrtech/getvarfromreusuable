@@ -8,8 +8,7 @@ jobs:
   mainjob1:
     runs-on: "moh_win"
     
-    steps:
-        
+    steps:        
       - name: Checkout  repository
         uses: actions/checkout@v3
         
@@ -17,8 +16,7 @@ jobs:
     needs:
       - mainjob1
     uses: knowyrtech/betech/.github/workflows/reuse.yml@feature365
-    
-    
+        
   mainjob2:
     needs: 
       - reusuable_workflow_job  
