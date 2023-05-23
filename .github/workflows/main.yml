@@ -19,6 +19,6 @@ jobs:
   reusuable_workflow_job:
     needs:
       - mainjob1
-    uses: knowyrtech/betech/.github/workflows/extractxmldata.yml@feature365
+    uses: knowyrtech/betech/.github/workflows/reuse.yml@feature365
     
     
