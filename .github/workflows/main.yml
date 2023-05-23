@@ -1,0 +1,24 @@
+name: CALLER main yml
+
+on:
+  push:
+    branches: main
+
+jobs:
+  mainjob1:
+    runs-on: moh_win
+    
+    steps:
+    
+      - run: |
+          whoami
+          
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+  reusuable_workflow_job:
+    needs:
+      - mainjob1
+    uses: knowyrtech/betech/.github/workflows/getvalue.yml@mm365
+    
+    
