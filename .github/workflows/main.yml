@@ -22,3 +22,12 @@ jobs:
     uses: knowyrtech/betech/.github/workflows/reuse.yml@feature365
     
     
+  mainjob2:
+    needs: 
+      - reusuable_workflow_job  
+    runs-on: "moh_win"
+    
+    steps:
+      - name: Back to main workflow
+        run: |
+          echo "App name in mainjob2: ${{ needs.reusable_workflow_job.outputs.app_name }}"  
